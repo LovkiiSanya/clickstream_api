@@ -1,0 +1,16 @@
+[flake8]
+max-complexity = 6
+max-line-length = 79
+inline-quotes = double
+max-module-members = 7
+show-source = true
+statistics = true
+output-file = flake8_report.txt
+# Plagins
+select = B, C, E, F, G, W, DAR, SLS, I, M
+ignore = WPS110, WPS317
+
+# wemake-python-styleguide
+per-file-ignores =
+    # Allows to use prints in these files
+    manage.py: WPS226
